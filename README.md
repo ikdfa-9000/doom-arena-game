@@ -1,5 +1,7 @@
 # DOOM ARENA PROJECT - Game Repository
 
+first run npm install, then npm run dev
+
 Repository for the game itself, main menu can be found [here](https://github.com/ikdfa-9000/doom-arena-project)
 Why am I even doing this... anyways, there are known bugs:
 * First shotgun fire sequence after selecting the weapon resets hand animation for a while. Easy fix, just not in the mood bruh
