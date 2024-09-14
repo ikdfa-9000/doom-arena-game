@@ -1,0 +1,229 @@
+@keyframes fadeOut {
+    0% { 
+        opacity: 0%; 
+    }
+    10% { 
+        opacity: 100%; 
+    }
+    80% {
+        opacity: 100%;
+    }
+    100% { 
+        opacity: 0%;
+    }
+  }
+
+.hudContainer {
+    width: 100%;
+    z-index: 2;
+    height: 100%;
+    position: absolute;
+}
+
+.messageDiv {
+    animation: fadeOut 2s;
+    position: absolute;
+    left: 50%;
+    opacity: 0%;
+    top: 85%;
+    width: 100%;
+    height: 10%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Left and right borders stuff */
+
+.leftContainer, .rightContainer {
+    position: absolute;
+    bottom: 7%;
+    width: 300px;
+    height: 75px;
+    padding: 5px 20px;
+  }
+.leftContainer::before, .rightContainer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 14px; 
+    padding: 2px; 
+    background:linear-gradient(0deg,rgba(255, 255, 255, 0.608),rgba(0, 0, 0, 0)); 
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude; 
+}
+
+.leftContainer {
+    left: 7%;
+}
+
+.rightContainer {
+    right: 7%;
+}
+
+/* LEFT BAR */
+
+/* Health stuff */
+
+.healthImg {
+    width: 25px;
+    height: auto;
+    transform: translate(50% 50%);
+}
+
+.healthContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50%;
+}
+
+.healthBar {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 1px;
+    background: rgba(0, 0, 0, 0.281)
+}
+
+.healthBarFill {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    background: linear-gradient(90deg, rgb(6, 126, 255), rgb(0, 166, 255));
+    border-right: solid 6px white;
+}
+
+/* Armor stuff */
+
+.armorImg {
+    width: 20px;
+    height: auto;
+    transform: translate(50% 50%);
+}
+
+.mediumCounter {
+    font-size: 24px;
+    color: white;
+    text-shadow: 1px 1px black;
+    display: inline;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.armorContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 40%;
+}
+
+.armorBar {
+    width: 70%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 1px;
+    background: rgba(0, 0, 0, 0.281)
+}
+
+.armorBarFill {
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+    background: linear-gradient(90deg, rgb(11, 202, 65), rgb(0, 255, 4));
+    border-right: solid 6px white;
+}
+
+/* RIGHT BAR */
+
+.ammoDiv {
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+}
+
+.ammoNumDiv {
+    width: 100%;
+    height: 50%;
+}
+
+.ammoBar {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    transform: scaleX(-1);
+    justify-content: space-between;
+    margin-right: 1px;
+    background: rgba(0, 0, 0, 0.281)
+}
+
+.ammoBarFill {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: linear-gradient(90deg, rgb(6, 126, 255), rgb(0, 166, 255));
+    border-right: solid 6px white;
+}
+
+.gunImg {
+    width: 50%;
+    display: inline-block;
+    height: auto;
+}
+
+.bigCounter {
+    font-size: 32px;
+    color: white;
+    display: inline;
+    text-shadow: 1px 1px black;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* SCORE CONTAINER */
+
+.scoreDiv {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 7%;
+    right: 7%;
+}
+
+.scoreImg {
+    width: 75px;
+    height: auto;
+}
+
+.scoreCounter {
+    font-size: 30px;
+    color: white;
+    display: inline;
+    text-shadow: 1px 1px black;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.reticle {
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

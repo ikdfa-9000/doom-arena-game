@@ -1,0 +1,120 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.weaponPageContainer {
+    width: 100%;
+    z-index: 4;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.leftSide {
+    width: 40%;
+    height: 100%;
+}
+
+.rightSide {
+    animation: fadeIn 0.4s;
+    width: 60%;
+    height: 100%;
+}
+
+.header {
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-bottom: 175px;
+    font-size: 60px;
+}
+
+.weaponButton {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    background: none;
+    display: block;
+    border: none;
+}
+
+.weaponName {
+    font-size: 25px;
+}
+
+.weaponButton:hover {
+    border-bottom: white 1px solid;
+}
+
+.pointCount {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+/* RIGHT SIDE */
+
+.headerWeapon {
+    display: block;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    text-align: right;
+    margin-right: 70px;
+    font-size: 45px;
+}
+
+.imageCenterer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.imageGun {
+    margin-right: 50px;
+    display: block;
+    height: 100%;
+}
+
+.costAndBuy {
+    padding: 30px;
+    padding-bottom: 0px;
+    width: 35%;
+}
+
+.weaponDescription {
+    padding: 20px;
+    padding-bottom: 0px;
+    width: 65%;
+}
+
+.bottomSide {
+    display: flex;
+}
+
+.cost {
+    font-size: 40px;    
+    margin-bottom: 10px;
+}
+
+.weaponBuyButton {
+    background: none;
+    display: block;
+    border: none;
+}
+
+.weaponBuyButtonText {
+    font-size: 50px;
+}
+
+.buttonCenterer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
